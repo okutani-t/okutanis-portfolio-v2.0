@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>okutani's Portfolio</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="description" content="ダメ人間okutaniがお送りするポートフォリオ。やるなら今しかねぇ！">
+    <meta name="keywords" content="okutani,ポートフォリオ">
+    <meta name="author" content="okutani">
+
+    <!-- twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@okutani_t">
+    <meta name="twitter:creator" content="@okutani_t">
+    <meta name="twitter:title" content="okutani's Portfolio">
+    <meta name="twitter:description" content="ダメ人間okutaniがお送りするポートフォリオ。やるなら今しかねぇ！">
+    <meta name="twitter:image:src" content="./assets/images/ogp-img.png">
+    <meta name="twitter:domain" content="okutani.net">
+
+    <link rel="icon" type="image/vnd.microsoft.icon" href="./assets/images/favicon.ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Just+Another+Hand&text=Thisokutani's Portfolio" rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Yatra+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Hammersmith+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Yellowtail&text=okutani’s Prfl" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/circliful/1.0.2/css/jquery.circliful.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="./assets/stylesheets/main.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="navbar navbar-fixed-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">okutani's Portfolio</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#works">Works</a></li>
+                <li><a href="#skill">Skill</a></li>
+                <li><a href="#story">Story</a></li>
+                <li><a href="#service">Service</a></li>
+                <li><a href="#comment">Comment</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </nav>
+      </div>
+    </header>
+
+    <div class="intr">
+      <h1 class="title">This is<br>okutani's Portfolio</h1>
+      <p class="down-arrow">
+        <a href="#about"><i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
+      </p>
+    </div>
+
+    <main class="main">
+      <section id="about">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-5 col-sm-offset-1 text-center">
+              <h2 class="section-title">About</h2>
+              <div id="svg-about"></div>
+            </div>
+            <div class="col-sm-6 about-list">
+              <ul>
+                <li>name: okutani</li>
+                <li>age: <span id="age"></span>歳</li>
+                <li>sex: 男</li>
+                <li>趣味: 吉祥寺巡り</li>
+                <li>座右の銘: 「やるかやらないかじゃない。やってみなきゃわからない」</li>
+                <li>一言: ゆるーくやろうぜ</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="portfolio" class="bg-gray">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-5 text-center col-sm-push-7">
+              <h2 class="section-title">Portfolio</h2>
+              <div id="svg-portfolio"></div>
+            </div>
+            <div class="col-sm-7 text-center col-sm-pull-5">
+              <div class="col-sm-6 wow fadeInUp" data-wow-duration="2.0s" data-wow-delay="0.5s">
+                <div class="thumbnail">
+                  <img src="./assets/images/hq.png" alt="エリソンキャトル" onClick="myAlert('HÉRISSON QUATRE','<p>サイト構築からTシャツデザインまで、すべて自分で制作・運営しているデザインTシャツのネットショップ。僕が初めて公開したWebサイト。</p><p><span class=\'label label-info\'>利用技術</span> EC-CUBE3/PHP/HTML5/CSS3/ JavaScript/jQuery</p><a class=\'btn btn-danger btn-block\' href=\'https://herisson-quatre.com\' target=\'_blank\'>HÉRISSON QUATREへ</a>','./assets/images/hq.png')">
+                  <div class="caption">
+                    <h3 class="section-sub-title">HÉRISSON QUATRE</h3>
+                    <p>デザインTシャツのネットショップ</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 wow fadeInUp" data-wow-duration="2.0s" data-wow-delay="1.0s">
+                <div class="thumbnail">
+                  <img src="./assets/images/vdeep.png" alt="vdeep" onClick="myAlert('vdeep','<p>個人で運営しているブログ。月間11万PV〜。技術系記事を書くことが多い。</p><p><span class=\'label label-info\'>利用技術</span> WordPress/Stinger5/HTML5/CSS3</p><a class=\'btn btn-danger btn-block\' href=\'http://vdeep.net\' target=\'_blank\'>vdeepへ</a>','./assets/images/vdeep.png')">
+                  <div class="caption">
+                    <h3 class="section-sub-title">vdeep</h3>
+                    <p>okutaniが運営するブログ</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 wow fadeInUp" data-wow-duration="2.0s" data-wow-delay="0.5s">
+                <div class="thumbnail">
+                  <img src="./assets/images/ctw.png" alt="change the world" onClick="myAlert('Change The World','<p>自作の詩をまとめて公開しているサイト。極たまーに更新。</p><p><span class=\'label label-info\'>利用技術</span> WordPress/fukasawa</p><a class=\'btn btn-danger btn-block\' href=\'http://ctw.okutani.net\' target=\'_blank\'>Change The Worldへ</a>','./assets/images/ctw.png')">
+                  <div class="caption">
+                    <h3 class="section-sub-title">Change The World</h3>
+                    <p>自作の詩をまとめたサイト</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 wow fadeInUp" data-wow-duration="2.0s" data-wow-delay="1.0s">
+                <div class="thumbnail">
+                  <img src="./assets/images/old-pf.png" alt="change the world" onClick="myAlert('Old okutani\'s Portfolio','<p>以前のポートフォリオサイト。デザインは好きだったが、ほとんど拾ってきたテンプレートだったため1から作り直した。</p><p><span class=\'label label-info\'>利用技術</span> Bootstrap/ HTML5/CSS3/ JavaScript/jQuery</p><a class=\'btn btn-danger btn-block\' href=\'./assets/old-pf\' target=\'_blank\'>Old okutani\'s Portfolioへ</a>','./assets/images/old-pf.png')">
+                  <div class="caption">
+                    <h3 class="section-sub-title">Old okutani's Portfolio</h3>
+                    <p>以前のポートフォリオ</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section id="works">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-5 col-sm-offset-1 text-center">
+              <h2 class="section-title">Works</h2>
+              <div id="svg-works"></div>
+            </div>
+            <div class="col-sm-6 works-list">
+              <div class="col-xs-6 col-sm-4 wow fadeInUp" data-wow-duration="2.0s" data-wow-delay="0.5s" data-wow-offset="100">
+                <img src="./assets/images/work1.png" class="img-circle" alt="work1" onClick="myAlert('HTMLコーディング', 'HTML5/CSS3を使ったサイト構築。レスポンシブ対応のサイト構築も1からやったりします。', './assets/images/work1.png')">
+              </div>
+              <div class="col-xs-6 col-sm-4 wow fadeInUp" data-wow-duration="2.0s" data-wow-delay="1.0s" data-wow-offset="100">
+                <img src="./assets/images/work2.png" class="img-circle" alt="work1" onClick="myAlert('システム構築', '顧客情報や店舗情報を管理するシステムを構築。管理画面はモダンに作らないと気が済まないタイプの人間。', './assets/images/work2.png')">
+              </div>
+              <div class="col-xs-6 col-sm-4 wow fadeInUp" data-wow-duration="2.0s" data-wow-delay="1.5s" data-wow-offset="100">
+                <img src="./assets/images/work3.png" class="img-circle" alt="work1" onClick="myAlert('フォーム制作', 'お問い合わせ、キャンペーンなどのフォームを制作。勢いあまって自作フレームワーク作ったら社内で絶賛された経歴がある。', './assets/images/work3.png')">
+              </div>
+              <div class="col-xs-6 col-sm-4 wow fadeInUp" data-wow-duration="2.0s" data-wow-delay="1.0s" data-wow-offset="100">
+                <img src="./assets/images/work4.png" class="img-circle" alt="work1" onClick="myAlert('某車メーカーのシステム構築', '1年ほど、某有名車メーカーのシステム開発に携わってきました。なので管理系のシステムは得意。', './assets/images/work4.png')">
+              </div>
+              <div class="col-xs-6 col-sm-4 wow fadeInUp" data-wow-duration="2.0s" data-wow-delay="1.5s" data-wow-offset="100">
+                <img src="./assets/images/work5.png" class="img-circle" alt="work1" onClick="myAlert('Google Analytics関連', 'Google Analyticsをクライアントの要望に合わせて見やすく管理できるシステム。先輩と共同でプログラミング。2週間ぐらいでサクッとできた。', './assets/images/work5.png')">
+              </div>
+              <div class="col-xs-6 col-sm-4 wow fadeInUp" data-wow-duration="2.0s" data-wow-delay="2.0s" data-wow-offset="100">
+                <img src="./assets/images/work6.png" class="img-circle" alt="work1" onClick="myAlert('画像管理システム', '案件でよく記事投稿、スライドショーの画像をアップする機会があったので作った。そのうちちゃんとライブラリ化したい。', './assets/images/work6.png')">
+              </div>
+              <div class="col-xs-6 col-sm-4 wow fadeInUp" data-wow-duration="2.0s" data-wow-delay="1.5s" data-wow-offset="100">
+                <img src="./assets/images/work7.png" class="img-circle" alt="work1" onClick="myAlert('メッセージ管理', '某ITベンチャー企業で作ったメッセージ管理システム。なんだかんだ1週間ぐらいでできた。', './assets/images/work7.png')">
+              </div>
+            </div>
+          </div>
+      </section>
+
+      <section id="skill" class="bg-gray">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-5 text-center col-sm-push-6">
+              <h2 class="section-title">Skill</h2>
+              <div id="svg-skill"></div>
+            </div>
+            <div class="col-sm-5 col-sm-offset-1 text-center col-sm-pull-5">
+              <div class="col-sm-6">
+                <div id="php-circle" class="circle"></div>
+                <h3 class="section-sub-title">php</h3>
+              </div>
+              <div class="col-sm-6">
+                <div id="ruby-circle" class="circle"></div>
+                <h3 class="section-sub-title">ruby</h3>
+              </div>
+              <div class="col-sm-6">
+                <div id="html-circle" class="circle"></div>
+                <h3 class="section-sub-title">HTML/CSS</h3>
+              </div>
+              <div class="col-sm-6">
+                <div id="js-circle" class="circle"></div>
+                <h3 class="section-sub-title">JavaScript</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="story">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-5 col-sm-offset-1 text-center">
+              <h2 class="section-title">Story</h2>
+              <div id="svg-story"></div>
+            </div>
+
+            <div class="col-sm-6 story-list">
+              <div class="col-sm-6">
+                <h3 class="section-sub-title">1990~</h3>
+                <img src="./assets/images/story1.jpg" alt="ストーリー1">
+                <p class="wow fadeInUp" data-wow-duration="2.0s" data-wow-delay="1.0s" data-wow-offset="100">1990年、練馬区で生まれる。ゲゲゲの鬼太郎をこよなく愛する幼年期を送る。<br>幼稚園を飛び跳ねて過ごし、小学校を飛び跳ねて過ごし、中学校を飛び跳ねて過ごす。<br>中学校卒業の頃、やっと物心がつき、飛び跳ねるのを止めた。</p>
+              </div>
+              <div class="col-sm-6">
+                <h3 class="section-sub-title">2006~</h3>
+                <img src="./assets/images/story2.jpg" alt="ストーリー2">
+                <p class="wow fadeInUp" data-wow-duration="2.0s" data-wow-delay="1.5s" data-wow-offset="100">中学3年間片思いした女の子に玉砕し、暗黒時代の高校時代に突入。<br>なんとか巻き返そうとするも、高校入学早々、スキンヘッドにサングラス姿で「サンプラザ中野です」と体を張った渾身のギャグがスベりにスベる。<br>女性恐怖症に陥り、太宰治の全集をひたすら読む根暗キャラへ転向。<br>学校に行く意味が分からなくなり、半年間引き篭もる。</p>
+              </div>
+              <div class="col-sm-6">
+                <h3 class="section-sub-title">2009~</h3>
+                <img src="./assets/images/story3.jpg" alt="ストーリー3">
+                <p class="wow fadeInUp" data-wow-duration="2.0s" data-wow-delay="0.5s" data-wow-offset="100">引き篭もりながら受験勉強をして、なんとか法政大学理工学部に合格。大学では情報を選考。<br>勉強はほとんどせず、麻雀漬けの日々を送る。<br>周りがC言語を必死に覚える横で、役と符計算を必死になって覚える。<br>卒業間近で流石に焦り、法政大学院を受験、合格。やっとまともに勉強するようになる。</p>
+              </div>
+              <div class="col-sm-6">
+                <h3 class="section-sub-title">2015~</h3>
+                <img src="./assets/images/story4.jpg" alt="ストーリー4">
+                <p class="wow fadeInUp" data-wow-duration="2.0s" data-wow-delay="1.0s" data-wow-offset="100">2015年4月、都内のIT会社へ新卒入社。<br>が、遅く来た反抗期が如く、目覚めた意識高い系が拗れに拗れ、半年でクビに。<br>その後、某有名車メーカーのWebシステムにアルバイトとして携わる。<br>この頃、趣味ではじめたブログ『vdeep』が月間10万PVを超える。<br>2016年8月、アルバイトを辞め、Web系エンジニアのフリーランスへ。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="service" class="bg-gray">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-5 text-center col-sm-push-6">
+              <h2 class="section-title">Service</h2>
+              <div id="svg-service"></div>
+            </div>
+            <div class="col-sm-5 col-sm-offset-1 text-center service-list col-sm-pull-5">
+              <div class="row">
+                <div class="col-sm-6">
+                  <div onClick="myAlert('ITコンサル', '<p>Web制作、IT・クラウド活用、システム開発、ポートフォリオ制作、ブログ活用などのご相談を主にチャットを利用しておこないます。</p><p class=\'price\'>3万円/月</p><p>質問の上限は月に30回程度（かつ、答えられる範囲内）。翌営業日までに回答。こちらが手を動かす内容の質問はサポート外。チャットワークを利用。詳しくはお問い合わせへ。</p><p><span class=\'label label-info\'>関連技術</span> HTML5/CSS3/ Bootstrap/ WordPress /EC-CUBE3など</p>', './assets/images/service1.png')">
+                    <img src="./assets/images/service1.png" alt="ITコンサル" class="wow bounceIn" data-wow-delay="0.5s" data-wow-offset="100">
+                  </div>
+                  <h3 class="section-sub-title">IT Consulting</h3>
+                </div>
+                <div class="col-sm-6">
+                  <div onClick="myAlert('Webサイト制作', '<p>WordPressやBootstrap、EC-CUBE3を利用したWebサイト（ホームページ）を制作いたします。</p><p class=\'price\'>15万円〜</p><p>詳細はお気軽にお問い合わせください。</p><p><span class=\'label label-info\'>関連技術</span> HTML5/CSS3/ PHP/ JavaScript/jQuery/ SCSS/gulpなど</p>', './assets/images/service2.png')">
+                    <img src="./assets/images/service2.png" alt="Webサイト制作" class="wow bounceIn" data-wow-delay="1.0s" data-wow-offset="100">
+                  </div>
+                  <h3 class="section-sub-title">Web Site</h3>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6">
+                  <div onClick="myAlert('システム開発', '<p>PHP(Laravel)、Ruby(Ruby on Rails)を利用したシステム開発をおこないます。月額制での開発もおこなっています。</p><p class=\'price\'>4万円/10時間〜</p><p><span class=\'label label-info\'>関連技術</span> PHP/Ruby/ HTML5/CSS3/ SCSS/ JavaScript/jQuery/ React/gulp/ MySQL/PostgreSQL/SQLite/ Vagrant/ Ansible/ Linux/ nginx/ Git/GitHub/ Slack/ChatWorkなど</p>', './assets/images/service3.png')">
+                    <img src="./assets/images/service3.png" alt="システム開発" class="wow bounceIn" data-wow-delay="1.0s" data-wow-offset="100">
+                  </div>
+                  <h3 class="section-sub-title">System</h3>
+                </div>
+                <div class="col-sm-6">
+                  <div onClick="myAlert('セミナー', '<p>Webサイト制作、WordPress、ブログ活用、Git、IT活用ツールなどの外部講師としてセミナーをおこないます。</p><p class=\'price\'>2万円〜/1回</p><p><span class=\'label label-info\'>関連技術</span> HTML5/CSS3/ JavaScript/ WordPress/ Git/GitHub/ Evernote/Dropbox/ Trello/ Slack/ChatWorkなど', './assets/images/service4.png')">
+                    <img src="./assets/images/service4.png" alt="セミナー" class="wow bounceIn" data-wow-delay="1.5s" data-wow-offset="100">
+                  </div>
+                  <h3 class="section-sub-title">Seminar</h3>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section id="comment">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-5 col-sm-offset-1 text-center">
+              <h2 class="section-title">MY Friends' Comment</h2>
+              <div id="svg-comment"></div>
+            </div>
+
+            <div class="col-sm-6">
+              <div class="col-sm-6">
+                <h3 class="section-sub-title">Larry Parker</h3>
+                <img src="./assets/images/friend1.png" alt="ストーリー1">
+                <p class="wow fadeInUp" data-wow-duration="2.0s" data-wow-delay="1.0s" data-wow-offset="100">ああ、彼ね。彼はそうだね、うん、あれだ、とりあえず、なんていうか、ヤバい。<br>そう、んー、なんて言えばいいんだろう。表現が難しいんだけど、そうだね。<br>一言で言うと、んー、あれだ、そうそう、とにかくね、ヤバい。</p>
+              </div>
+              <div class="col-sm-6">
+                <h3 class="section-sub-title">Diana & Sophia</h3>
+                <img src="./assets/images/friend2.png" alt="ストーリー2">
+                <p class="pink-color wow fadeInUp" data-wow-duration="2.0s" data-wow-delay="1.5s" data-wow-offset="100"">Diana「え？何？友達のコメント？いや別にokutaniと友達ってわけじゃないんだけど。まぁ1回ーラスベガス、あ、ベガスでー、コンパったことあるけどー、別にー友達じゃないわ！ファック！！」<br>Sophia「ってか私たちー今ーちょー忙しいからーマジーナンパーならー後にーしてーあージョニー・デップにー抱かれてぇー」</p>
+              </div>
+              <div class="col-sm-6">
+                <h3 class="section-sub-title">Kay Garland</h3>
+                <img src="./assets/images/friend3.jpg" alt="ストーリー3">
+                <p class="pink-color wow fadeInUp" data-wow-duration="2.0s" data-wow-delay="0.5s" data-wow-offset="100"">一言コメント？いや、ちょっと待って。聞こえる。<br>そう、フォースの声。<br>え、あなた、もしかして聞こえないの？じゃあ『アマテラスの直感』を持っていないのね。うん、わかったわ。<br>そうね、あなたには『初めてのフォース体験！黒魔導入門BD+6ヶ月熟練魔道士のサポート付き』を特別に27万ドルで譲ってあげるわ。この口座に早めに振り込んでおいてね。それじゃ。</p>
+              </div>
+              <div class="col-sm-6">
+                <h3 class="section-sub-title">Patrick Bailey</h3>
+                <img src="./assets/images/friend4.jpg" alt="ストーリー4">
+                <p class="wow fadeInUp" data-wow-duration="2.0s" data-wow-delay="1.0s" data-wow-offset="100">ちょっと待ってくれ！あんた、おいらの声が聴こえるのかい？ホーリーシット！<br>そうなんだ、動物にされちまったんだ。よく分からん黒魔導だか何だかの勧誘を断ったらこのザマさ。なぁあんた、おいらを助けてくれないかい？<br>え、okutaniに一言？こんな大変なときに何言ってんだ！ジャパニーズジョークはよしてくれ。ふざけんな！</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="last-comment" class="bg-gray">
+        <p>
+          "やるなら今しかねぇ<span class="sm-br">　</span>やるなら今しかねぇ！"
+        </p>
+      </section>
+
+      <section id="contact">
+        <div class="container text-center">
+          <h2 class="section-title contact-title">Contact<small>（実際のお問合わせは<a href="http://okutani.net" target="_blank">okutani.net</a>へ）</small></h2>
+          <form method="post" action="">
+            <div class="row mb20">
+              <div class="col-sm-5 col-sm-offset-1">
+
+                <div class="form-group">
+                  <input name="name" type="text" class="form-control" placeholder="名前">
+                  <span class="label label-danger">必須</span>
+                </div>
+
+                <div class="form-group">
+                  <input name="email" type="email" class="form-control" placeholder="Email">
+                  <span class="label label-danger">必須</span>
+                </div>
+
+                <div class="form-group">
+                  <input name="subject" type="text" class="form-control" placeholder="件名">
+                  <span class="label label-danger">必須</span>
+                </div>
+
+              </div>
+              <div class="col-sm-5">
+                <div class="form-group">
+                  <textarea name="content" class="form-control" rows="8" placeholder="内容"></textarea>
+                  <span class="label label-danger">必須</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-4 col-sm-offset-4">
+                <button id="submit" type="submit" class="btn btn-danger btn-lg btn-block">送信</button>
+              </div>
+            </div>
+
+            <p class="send-msg text-center"><br></p>
+          </form>
+        </div>
+      </section>
+    </main><!-- /container -->
+
+    <footer class="footer">
+      <div class="container">
+        <ul class="social-buttons">
+          <li>
+            <a class="twitter wow bounce infinite" data-wow-duration="2.0s" href="https://twitter.com/okutani_t" target="_blank">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a class="facebook wow flip infinite" data-wow-duration="2.5s" data-wow-delay="2.0s" href="https://www.facebook.com/okutani.nt" target="_blank">
+              <i class="fa fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a class="github wow swing infinite" data-wow-duration="2.0s" href="https://github.com/okutani-t" target="_blank">
+              <i class="fa fa-github"></i>
+            </a>
+          </li>
+          <li>
+            <a class="wantedly wow rubberBand infinite" data-wow-duration="1.5s" href="https://www.wantedly.com/users/18037582" target="_blank">
+              <img src="./assets/images/wantedly.png" alt="wantedlyアイコン">
+            </a>
+          </li>
+        </ul>
+        <p class="text-center">Copyright © okutani's Portfolio 2014-2018</p>
+      </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/circliful/1.0.2/js/jquery.circliful.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+    <script src="./assets/js/jquery.lazylinepainter-1.7.0.min.js"></script>
+    <script src="./assets/js/svg-about.js"></script>
+    <script src="./assets/js/svg-portfolio.js"></script>
+    <script src="./assets/js/svg-works.js"></script>
+    <script src="./assets/js/svg-skill.js"></script>
+    <script src="./assets/js/svg-story.js"></script>
+    <script src="./assets/js/svg-service.js"></script>
+    <script src="./assets/js/svg-comment.js"></script>
+    <script src="./assets/js/svg-script.js"></script>
+
+    <script src="./assets/js/my.js"></script>
+  </body>
+</html>

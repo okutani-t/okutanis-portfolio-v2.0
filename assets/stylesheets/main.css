@@ -1,0 +1,462 @@
+@charset "UTF-8";
+html {
+  font-size: 62.5%;
+  /* 約10px */
+}
+
+body {
+  /*ゴシック*/
+  font-family: Arial, Roboto, "Droid Sans", "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+  color: #333;
+  font-size: 1.6em;
+  /*Chromeでたまに文字が大きくなるので、bodyだけremでなくてemを使う*/
+}
+
+h2.section-title {
+  font-family: 'Yatra One', cursive;
+  color: #444;
+  font-size: 3.6rem;
+}
+
+h3.section-sub-title {
+  font-family: 'Hammersmith One', sans-serif;
+}
+
+.mb20 {
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .sweet-alert {
+    max-height: 80%;
+    overflow-y: scroll;
+  }
+}
+.sweet-alert .btn {
+  font-size: 1.8rem;
+}
+.sweet-alert .btn:after {
+  content: '\f08e';
+  font-family: FontAwesome;
+  margin-left: 5px;
+}
+.sweet-alert p p {
+  margin-bottom: 20px;
+}
+.sweet-alert .price {
+  color: limegreen;
+  font-size: 2rem;
+}
+@media only screen and (max-width: 768px) {
+  .sweet-alert .sa-icon.sa-custom {
+    max-width: 80% !important;
+    max-height: 160px;
+  }
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* header */
+.header {
+  display: none;
+}
+.header.show {
+  position: relative;
+  z-index: 1000;
+  display: block;
+  opacity: 0.9;
+  animation: show 1.5s linear 0s;
+}
+.header .navbar {
+  background-color: #333;
+}
+.header .navbar .navbar-toggle {
+  padding: 14px 8px 0 0;
+}
+.header .navbar .navbar-toggle .icon-bar {
+  background: #fff;
+}
+.header .navbar a {
+  color: #fff;
+}
+.header .navbar .navbar-brand {
+  font-family: 'Yellowtail', cursive;
+  color: #ff1313;
+  margin: 5px 0;
+  font-size: 2.3rem;
+}
+.header .navbar ul li {
+  margin: 5px;
+}
+.header .navbar ul li.active {
+  background: #ff1313;
+  border-radius: 5px;
+}
+.header .navbar ul li a,
+.header .navbar ul li a:hover,
+.header .navbar ul li a:active {
+  background: none !important;
+}
+
+/* 心臓のドクドク */
+@keyframes pop {
+  0% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(1.05);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+  52% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/* top画像 */
+.intr {
+  background: url("../images/oku-header.jpg") center center/cover no-repeat fixed;
+  width: 100%;
+  height: 100vh;
+  background-position: 0 0;
+  position: relative;
+  text-align: center;
+}
+@media only screen and (max-width: 768px) {
+  .intr {
+    background: url("../images/sm-oku-header.jpg") center center/cover no-repeat;
+  }
+}
+.intr .title {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  width: 420px;
+  height: 200px;
+  letter-spacing: 1px;
+  font-family: 'Just Another Hand', cursive;
+  color: #fff;
+  text-shadow: -2px 4px 20px rgba(0, 0, 0, 0.6);
+  font-size: 10rem;
+  animation: pop 4s;
+  animation-iteration-count: infinite;
+}
+@media only screen and (max-width: 768px) {
+  .intr .title {
+    width: 300px;
+    font-size: 6rem;
+  }
+}
+.intr .down-arrow {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  margin-left: -50px;
+  cursor: pointer;
+  text-align: center;
+}
+.intr .down-arrow i {
+  font-size: 5rem;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+  color: #fff !important;
+}
+
+/* main */
+main section {
+  padding: 140px 0;
+}
+@media only screen and (max-width: 768px) {
+  main section {
+    padding: 80px 0;
+  }
+}
+main .bg-gray {
+  background: #f8f8f8;
+}
+main ul li {
+  position: relative;
+  list-style: none;
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+}
+main ul li:after {
+  display: block;
+  content: '';
+  position: absolute;
+  top: .5em;
+  left: -1em;
+  width: 6px;
+  height: 6px;
+  background-color: #3498db;
+  transform: rotate(-45deg);
+}
+main #svg-about {
+  width: 350px;
+  height: 350px;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 768px) {
+  main #svg-about {
+    width: 250px;
+    height: 250px;
+  }
+}
+main #svg-portfolio,
+main #svg-works,
+main #svg-skill,
+main #svg-story,
+main #svg-service,
+main #svg-comment {
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 768px) {
+  main #svg-portfolio,
+  main #svg-works,
+  main #svg-skill,
+  main #svg-story,
+  main #svg-service,
+  main #svg-comment {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+/* about */
+#about .about-list {
+  padding-top: 80px;
+}
+
+/* portfolio */
+#portfolio img {
+  transition: 0.3s;
+}
+#portfolio img:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+/* works */
+#works .works-list {
+  text-align: center;
+}
+#works .works-list img {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 20px;
+  border: 3px solid #ddd;
+  transition: 0.3s;
+}
+#works .works-list img:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+@media only screen and (max-width: 768px) {
+  #works .works-list img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+/* skill */
+#skill .circle {
+  min-height: 200px;
+  margin-bottom: -35px;
+}
+
+/* story */
+#story img {
+  width: 50%;
+  display: block;
+  margin: 0 auto 15px;
+  border-radius: 50%;
+  border: 3px solid #ccc;
+}
+
+/* service */
+#service .service-list img {
+  width: 70%;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+#service .service-list img:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+#service .service-list .section-sub-title {
+  margin: 10px 0 30px;
+}
+
+/* comment */
+#comment .section-sub-title {
+  text-align: center;
+}
+#comment img {
+  width: 80%;
+  display: block;
+  margin: 0 auto 15px;
+  border-radius: 50%;
+  border: 3px solid #ccc;
+}
+#comment p {
+  position: relative;
+  background: #BCF5A9;
+  border-radius: 6px;
+  padding: 10px 15px;
+}
+#comment p:after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  margin-left: -10px;
+  display: block;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 0 10px 10px 10px;
+  border-color: transparent transparent #BCF5A9 transparent;
+}
+#comment p.pink-color {
+  background: #ffd8d4;
+}
+#comment p.pink-color:after {
+  border-color: transparent transparent #ffd8d4 transparent;
+}
+
+/* contact */
+#contact {
+  background: url("../images/contact-bk.jpg") center center/cover no-repeat fixed;
+}
+@media only screen and (max-width: 768px) {
+  #contact {
+    background: url("../images/contact-bk.jpg") center center/cover no-repeat;
+  }
+}
+#contact .contact-title {
+  color: #fff;
+  margin-bottom: 60px;
+}
+#contact .contact-title small {
+  color: #fff;
+}
+#contact .send-msg {
+  color: #fff;
+  margin-bottom: 20px;
+}
+#contact .form-group {
+  position: relative;
+}
+#contact .form-group input {
+  padding: 25px;
+  margin-bottom: 20px;
+}
+#contact .form-group input:focus {
+  border: 1px solid #ff1313;
+  box-shadow: 0 0 10px #ff1313;
+}
+#contact .form-group textarea {
+  resize: none;
+  padding: 16px 20px;
+}
+#contact .form-group textarea:focus {
+  border: 1px solid #ff1313;
+  box-shadow: 0 0 10px #ff1313;
+}
+#contact .form-group .label {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 1.1rem;
+  background: liten(#ff1313, 20%);
+}
+#contact #submit {
+  background: #ff1313;
+  border-color: #df0000;
+  transition: 0.3s;
+  margin-bottom: 10px;
+}
+#contact #submit:hover {
+  background: #c60000;
+  border-color: #930000;
+  color: #ddd;
+}
+
+/* last comment */
+#last-comment {
+  padding: 100px 0;
+  text-align: center;
+}
+#last-comment p {
+  font-size: 2rem;
+  font-weight: bold;
+  animation: pop 4s;
+  animation-iteration-count: infinite;
+  display: inline-block;
+}
+@media only screen and (max-width: 768px) {
+  #last-comment p .sm-br {
+    display: block;
+  }
+}
+
+/* footer */
+.footer {
+  padding-top: 15px;
+  background: #fff;
+}
+.footer ul.social-buttons {
+  text-align: center;
+  list-style: none;
+  padding: 0;
+}
+.footer ul.social-buttons li {
+  display: inline-block;
+  margin: 0 7px 10px;
+}
+.footer ul.social-buttons li a {
+  display: block;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  font-size: 20px;
+  line-height: 40px;
+  color: white;
+  outline: none;
+  transition: all 0.3s;
+}
+.footer ul.social-buttons .twitter {
+  background: #55acee;
+}
+.footer ul.social-buttons .facebook {
+  background: #315096;
+}
+.footer ul.social-buttons .github {
+  background: #222;
+}
+.footer ul.social-buttons .wantedly img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  margin-top: -2px;
+}
+
+/*# sourceMappingURL=main.css.map */
